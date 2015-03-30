@@ -1,0 +1,33 @@
+﻿<h3> XML Parsing Experiment and Project Functionality Implementation</h3>
+
+<p>
+This week I conducted an experiment on XML response parsing. I used the class XMLDocument to read the XML file. I find the root of the
+    XML document and then use the method SelectSingleNode to grab the child nodes. I did this experiment because while I was trying to implement methods of my lastfm API, I
+    saw that it gives XML response as well. 
+    <br />
+ In my project, I implemented the following functionalities in this week: 
+    <br/>
+    1. <b>Album Details Page </b>
+    <br />
+    - <b>Album Information:</b>
+    We reach on this page after navigating from the Album Search page. Now, I use the method album.getinfo to display
+    the information pertaining to the album that user wishes to see. I pass a parameter 'mbid' from the Album Search page into this page to form the
+    url for the api method. I also use a function GetParameterValues that extracts the mbid from the URL. I also parse and display the different
+    tracks in this album.
+    <br />
+    - <b>Buy Links for the Album:</b>
+    I use the method album.getbuylinks of lastfm API to get the buy links for this album. It displays the various suppliers, price 
+    and buy links where users can purchase this album from.
+    <br />
+    2. <b>Artist Details Page</b>
+    <br />
+    - <b>Similar Artists</b>
+    <br />When the user reaches on the detail information page of an artist, I also display the artists which are similar to the
+    artist which is selected and whose details are listed on the page. I use the method artist.getsimilar of lastfm API to display the
+    similar artists images and names. The images of the artists are clickable. When you click on similar artist image, it opens that artist's
+    details page.
+    <br/>
+
+    <b>Note:</b> A lot of work needs to be done on making the website look appealing using CSS. I also have to work on making it resonsive.
+    Hope to get this part done in this week. Check out my site next week to see the updates. Thanks!! :)
+</p>

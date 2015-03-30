@@ -1,0 +1,17 @@
+﻿../story/whatisnext.htm?../images/				What is Next?
+picture.JPG										My Picture
+noisy-texture-d.png								Documentation body background(noisetexturegenerator.com)
+noisy-texture-100x100-o100-d78-c-B00707-t0.png	Project body background(noisetexturegenerator.com)
+menu-icon.png									Menu Icon
+logo.png										Project Logo(Flamingtext.com)
+buy.jpg										Buy Link
+master.PNG										Master Page snapshot
+home.PNG										Home Page/ Top Albums snapshot
+search.PNG										Search Bar snapshot
+artistResult.PNG								Artist Search snapshot
+artistDetail.PNG								Artist Detail snapshot
+albumResult.PNG									Album Search snapshot
+albumDetail.PNG									Album Details snapshot
+eventResult.PNG									Events page snapshot
+contact.PNG										Contact Us snapshot
+story.txt										Story File

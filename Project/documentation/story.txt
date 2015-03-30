@@ -1,0 +1,15 @@
+﻿../../story/whatisnext.htm?../Project/documentation/					What is Next?	
+Overview.aspx														Project Overview	
+MasterPage.aspx														Master Page
+HomePage.aspx														Home Page
+ArtistSearch.aspx													Artist Search Page
+ArtistDetails.aspx													Artist Details Page
+AlbumSearch.aspx													Album Search Page
+AlbumDetails.aspx													Album Details Page
+Events.aspx															Events Page
+ContactUs.aspx														Contact Us Page
+errormsg.aspx														Error: No result found
+Acknowledgements.aspx												Acknowledgements and References
+FutureScope.aspx													Scope of Enhancement
+Images.aspx															Images used on website
+story.txt															Story File

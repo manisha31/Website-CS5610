@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Experiment 4</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $("#flip").click(function () {
+            $("#panel").slideToggle("slow");
+        });
+    });
+</script>
+    <script>
+        $(document).ready(function () {
+            $("#button1").click(function () {
+                $("#div1").animate({ left: '500px' });
+            });
+        });
+</script>
+<script>
+    $(document).ready(function () {
+        $("#button2").click(function () {
+            $("#p1").hide("slow", function () {
+                alert("This paragraph is now hidden");
+            });
+        });
+    });
+</script>
+
+    <style type="text/css"> 
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:lightyellow;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}       
+</style>
+</head>
+
+<body>
+    <h1> Exploring jQuery</h1>
+    <hr />
+    <h3> jQuery Slider </h3>
+    <p>
+        Here I experiment on jQuery slide methods to slide the elements up and down.
+    </p>
+  
+        <div id="flip">Click me to slide up or down!!</div>
+<div id="panel">Hii!! </div>
+
+    <h3> jQuery Animation</h3>
+    <p>The static HTML elements can be moved using jQuery animation.</p>
+  <button id="button1">Start Animation</button>
+   <div id="div1" style="background:blue;height:100px;width:100px;position:absolute;">
+       </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+       <h3> jQuery Callback Function</h3>
+    <p>The paragraph can be hidden on click of the button using the hide method in jQuery. An alert is displayed using 
+        javaScript after the hide effect is completed.</p>
+       <button id ="button2">Click to hide</button>   
+       <p id="p1"> Hi!! My name is Manisha Sharma.</p>
+
+    <h3>
+    <a href = "../fileview/Default.aspx?~/Experiment/Experiment4.html" target="_blank"> View Source</a>
+   
+</h3> 
+<hr />
+    <h3>References:</h3>
+    <a href = "http://www.w3schools.com/jquery/jquery_animate.asp" target="_blank">jQuery Animate method</a><br />
+     <a href = "http://www.w3schools.com/jquery/jquery_slide.asp" target="_blank">jQuery slide method</a>
+</body>
+</html>

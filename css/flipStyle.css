@@ -1,0 +1,227 @@
+﻿
+	
+	#container {
+		margin: 0 auto;
+		width: 665px	
+	}
+	
+	.thumb {
+		display:block;
+		width:200px;
+		height:140px;
+		position:relative;
+		margin-bottom:20px;
+		margin-right:20px;
+		float:left;
+	}
+	
+		.thumb-wrapper {
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	
+		.thumb img {
+			width:100%;
+			height:100%;
+			position:absolute;
+			display:block;			
+					
+		}
+		
+		.thumb .thumb-detail {
+			display:block;
+			width:100%;
+			height:100%;
+			position:absolute;			
+			background:#fff;
+			font-family:arial;
+			font-weight:bold;
+			font-size:16px;			
+		}
+		
+		.thumb .thumb-detail a {
+			display:block;
+			width:100%;
+			height:100%;
+			text-transform:uppercase;
+			font-weight:bold;	
+			color:#333;
+			text-decoration:none;		
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing:-1px;
+			padding:10px;	
+			font-size:18px;
+		}		
+	
+	/*
+	* Without CSS3
+	*/
+	.thumb.scroll {
+		overflow: hidden;
+	}	
+	
+		.thumb.scroll .thumb-detail {
+			bottom:-280px;
+		}
+	
+	
+	/*
+	* CSS3 Flip
+	*/	
+	.thumb.flip {
+		-webkit-perspective:800;		
+		   -moz-perspective:800;
+		    -ms-perspective:800;		   		
+		     -o-perspective:800;
+  		        perspective:800;
+	}
+	
+		.thumb.flip .thumb-wrapper {
+			-webkit-transition: -webkit-transform 1s;
+			   -moz-transition: -moz-transform 1s;
+			    -ms-transition: -moz-transform 1s;
+			     -o-transition: -moz-transform 1s;
+			        transition: -moz-transform 1s;
+			-webkit-transform-style: preserve-3d;
+			   -moz-transform-style: preserve-3d;			
+			    -ms-transform-style: preserve-3d;			
+			     -o-transform-style: preserve-3d;			
+					  transform-style: preserve-3d;			
+		}
+		
+		.thumb.flip .thumb-detail {
+			-webkit-transform: rotateY(-180deg);
+			   -moz-transform: rotateY(-180deg);
+			    -ms-transform: rotateY(-180deg);
+			     -o-transform: rotateY(-180deg);
+			        transform: rotateY(-180deg);			   			
+		}
+		
+		.thumb.flip img,
+		.thumb.flip .thumb-detail {
+			-webkit-backface-visibility: hidden;
+			   -moz-backface-visibility: hidden;
+			    -ms-backface-visibility: hidden;
+			     -o-backface-visibility: hidden;
+			        backface-visibility: hidden;
+		}
+		
+		.thumb.flip .flipIt {
+			-webkit-transform: rotateY(-180deg);
+			   -moz-transform: rotateY(-180deg);			
+			    -ms-transform: rotateY(-180deg);			
+			     -o-transform: rotateY(-180deg);			
+			        transform: rotateY(-180deg);			
+		}
+
+@media only screen and (max-width : 640px) {
+    #container {
+		margin: 0 auto;
+		width: 620px	
+	}
+	
+	.thumb {
+		display:block;
+		width:100px;
+		height:70px;
+		position:relative;
+		margin-bottom:5px;
+		margin-right:5px;
+		float:left;
+	}
+	
+		.thumb-wrapper {
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	
+		.thumb img {
+			width:100%;
+			height:100%;
+			position:absolute;
+			display:block;			
+					
+		}
+		
+		.thumb .thumb-detail {
+			display:block;
+			width:100%;
+			height:100%;
+			position:absolute;			
+			background:#fff;
+			font-family:arial;
+			font-weight:bold;
+			font-size:8px;			
+		}
+		
+		.thumb .thumb-detail a {
+			display:block;
+			width:100%;
+			height:100%;
+			text-transform:uppercase;
+			font-weight:bold;	
+			color:#333;
+			text-decoration:none;		
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing:-1px;
+			padding:1px;	
+			font-size:9px;
+		}		
+}
+@media only screen and (max-width : 320px) {
+    #container {
+		margin: 0 auto;
+		width: 300px	
+	}
+	
+	.thumb {
+		display:block;
+		width:90px;
+		height:70px;
+		position:relative;
+		margin-bottom:5px;
+		margin-right:5px;
+		float:left;
+	}
+	
+		.thumb-wrapper {
+			display:block;
+			width:100%;
+			height:100%;
+		}
+	
+		.thumb img {
+			width:100%;
+			height:100%;
+			position:absolute;
+			display:block;			
+					
+		}
+		
+		.thumb .thumb-detail {
+			display:block;
+			width:100%;
+			height:100%;
+			position:absolute;			
+			background:#fff;
+			font-family:arial;
+			font-weight:bold;
+			font-size:8px;			
+		}
+		
+		.thumb .thumb-detail a {
+			display:block;
+			width:100%;
+			height:100%;
+			text-transform:uppercase;
+			font-weight:bold;	
+			color:#333;
+			text-decoration:none;		
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing:-1px;
+			padding:1px;	
+			font-size:9px;
+		}		
+}

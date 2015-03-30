@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>Experiment 2
+    </title>
+</head>
+
+<script type="text/javascript">
+
+    function resize1() {
+        var size1 = document.getElementById("input1");
+        var size2 = document.getElementById("input2");
+        var size3 = document.getElementById("input3");
+        var image = document.getElementById("image");
+        //  alert("resize 1");
+        size1.style.color = 'red';
+        size2.style.color = 'black';
+        size3.style.color = 'black';
+        image.height = 50;
+        image.width = 50;
+    }
+
+    function resize2() {
+        var size1 = document.getElementById("input1");
+        var size2 = document.getElementById("input2");
+        var size3 = document.getElementById("input3");
+        var image = document.getElementById("image");
+        // alert("resize 2");
+        size1.style.color = 'black';
+        size2.style.color = 'red';
+        size3.style.color = 'black';
+        image.height = 100;
+        image.width = 100;
+    }
+
+    function resize3() {
+        var size1 = document.getElementById("input1");
+        var size2 = document.getElementById("input2");
+        var size3 = document.getElementById("input3");
+        var image = document.getElementById("image");
+        //  alert("resize 3");
+        size1.style.color = 'black';
+        size2.style.color = 'black';
+        size3.style.color = 'red';
+        image.height = 200;
+        image.width = 200;
+    }
+</script>
+
+
+<body onload="resize2()">
+    <h1>Size changing image</h1>
+    <h2>Description:</h2>
+
+    <p>
+        In this experiment, I have a picture which can resized to three available sizes - i.e. Small, Medium and Large.
+        I also make use of the color changing behaviour of text as shown in experiment 1, to higlight the selected image
+        display size. I use HTML and Javascript to implement this behaviour.
+    </p>
+
+    <h3>Select one Size :</h3>
+    <br>
+
+    <center>
+<label id="input1" onClick="resize1()">Small </label>&nbsp;
+<label id="input2" onClick="resize2()">Medium </label>&nbsp;
+<label id="input3" onClick="resize3()">Big </label>
+</center>
+    <br>
+    <br>
+
+    <center><img id="image" src="one.jpg" alt="Mickey Mouse"></center>
+
+    <div id="sourceDiv">
+        <h3>Source: </h3>
+        <p>
+            <a href="../fileview/Default.aspx?~/Experiment/Experiment2.html" target="_blank">HTML Source</a>
+
+        </p>
+
+        <h3>Reference: </h3>
+        <p>
+            <a href="http://www.w3schools.com/js/DEFAULT.asp" target="_blank">w3Schools Javascript Tutorial</a>
+
+        </p>
+
+    </div>
+</body>
+</html>

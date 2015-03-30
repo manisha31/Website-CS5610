@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Music Master Page</title>
+    <link rel="shortcut icon" href="../note.ico" />
+    <link rel="stylesheet" href="../css/socialmediastyle.css" />
+    <script src="../javascript/jquery-1.11.0.min.js"></script>
+    <link href="musicCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header>
+
+            <a href="musicHome.aspx" id="logo"></a>
+
+            <nav>
+
+                <a href="#" id="menu-icon"></a>
+
+                <ul>
+
+                    <li><a href="musicHome.aspx" >Home</a></li>
+                    <li><a href="artistSearch.aspx" >Artists </a></li>
+                    <li><a href="albumSearch.aspx" >Albums </a></li>
+                    <li><a href="events.aspx">Events</a></li>
+                    <li><a href="contactUs.aspx">Contact</a></li>
+                    <li><a href="../story/index.htm?../Project/documentation/story.txt" target="_blank"">Documentation</a></li>
+
+                </ul>
+
+            </nav>
+
+        </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!--
+        <footer>
+        <center>
+       
+            <p> © 2014 Manisha Sharma. All rights reserved.</p>
+        
+
+        </center>
+    </footer>
+ 
+     -->  
+    </div>
+    </form>
+</body>
+</html>

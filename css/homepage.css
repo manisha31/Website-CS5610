@@ -1,0 +1,491 @@
+﻿/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after, q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*MAIN*/
+body {
+    font-size: 1.05em;
+    line-height: 1.25em;
+    font-family: Helvetica Neue, Helvetica, Arial;
+    background-color:lightgrey;
+    
+}
+
+a {
+    color: #0A2E55;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        color: #E21F2F;
+    }
+
+img {
+    width: 100%;
+}
+
+header {
+    background: #fff;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 4px solid #0A2E55;
+    z-index: 100;
+}
+
+footer {
+background-color: orangered;
+width:100%;
+height:60px;
+padding:10px;
+
+position: fixed;
+ bottom: 0;
+left: 0; 
+}
+
+#logo {
+    margin: 20px;
+    float: left;
+    width: 400px;
+    height: 60px;
+    background: url(../images/logo.gif) no-repeat center;
+    display: block;
+}
+
+nav {
+    float: right;
+    padding: inherit;
+}
+
+#menu-icon {
+    display: inline;
+    width: 40px;
+    height: 40px;
+    background: orangered url(../images/menu-icon.png) center;
+}
+
+a:hover#menu-icon {
+    background-color: orangered;
+    border-radius: 4px 4px 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    color: #0A2E55;
+    font-family:Calibri;
+}
+
+.current {
+    color: #E21F2F;
+}
+
+section {
+    margin: 80px auto 0;
+    max-width: 980px;
+    position: relative;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: orangered;
+    margin: 12px 5px;
+    font-family:Cambria;
+}
+
+h2 {
+color: #0A2E55;
+font-size:large;
+font-family:Cambria;
+}
+
+p {
+    line-height: 1.45em;
+    margin-bottom: 20px;
+    color: #0A2E55;
+    font-family:Calibri;
+}
+
+#upper {
+    margin-top: 50px;
+    width:100%;
+    height:653px;
+    background-color:lightgoldenrodyellow;
+}
+
+
+#imagebox {
+height: 300px;
+width:40%;
+background-color:blue;
+margin: 50px auto auto 10px;
+float:left;
+border-radius:150px;
+background:url(../images/picture.jpg) center;
+}
+
+#hello {
+height: 500px;
+width:55%;
+
+margin: 20px 10px 0 10px;
+float:right;
+}
+
+#time #hello{
+height: 100px;
+width: 50%;
+float:right;
+margin-left:40px;
+background-color: blue;
+
+}
+
+#link1 {
+    height: 30px;
+    width: 100px;
+    background-color: lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+   padding-left: 10px; 
+    padding-top: 5px; 
+}
+
+#link2 {
+    height: 30px;
+    width: 200px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+    padding-left: 10px; 
+    padding-top: 5px;  
+}
+#link3 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+
+#link4 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+}
+#upper {
+    margin-top: 50px;
+    width:100%;
+    height:750px;
+    background-color:lightgoldenrodyellow;
+}
+
+
+#imagebox {
+height: 300px;
+width:40%;
+background-color:blue;
+margin: 50px auto auto 10px;
+float:left;
+border-radius:150px;
+background:url(../images/picture.jpg) center;
+}
+
+#hello {
+height: 500px;
+width:55%;
+
+margin: 20px 10px 0 10px;
+float:left;
+}
+
+#time #hello{
+height: 100px;
+width: 50%;
+float:left;
+margin-left:20px;
+background-color: blue;
+
+}
+
+#link1 {
+    height: 30px;
+    width: 100px;
+    background-color: lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+   padding-left: 10px; 
+    padding-top: 5px; 
+}
+
+#link2 {
+    height: 30px;
+    width: 200px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+    padding-left: 10px; 
+    padding-top: 5px;  
+}
+#link3 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+
+#link4 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+
+@media only screen and (max-width : 640px) {
+    .not_mobile {
+        display: none;
+    }
+
+    .box {
+display:block;
+}
+
+}
+@media only screen and (max-width : 320px) {
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display: inline-block;
+    }
+    
+a:active#menu-icon {
+    background-color: orangered;
+    border-radius: 4px 4px 0 0;
+}
+
+    nav ul, nav:active ul {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav:checked ul {
+        display: block;
+    }
+
+   section {
+    margin: 50px auto 0;
+    max-width: 320px;
+    position: relative;
+   
+}
+
+h1 {
+    font-size: 25px;
+    color: orangered;
+    margin: 12px 5px;
+    font-family:Cambria;
+}
+
+h2 {
+color: #0A2E55;
+font-size:20px;
+font-family:Cambria;
+}
+
+p {
+    
+    font-size:12px;
+    color: #0A2E55;
+    font-family:Calibri;
+}
+
+#upper {
+    margin-top: 50px;
+    width:100%;
+    height:700px;
+    background-color:lightgoldenrodyellow;
+    padding-bottom:30px;
+}
+
+
+#imagebox {
+height: 300px;
+width:30%;
+background-color:blue;
+float:left;
+background:url(../images/picture.jpg) center;
+}
+
+#hello {
+height: 250px;
+width:60%;
+
+margin: 5px 5px 5px 5px;
+float:right;
+}
+
+#time #hello{
+height: 50px;
+width: 50%;
+float:right;
+margin-left:20px;
+background-color: blue;
+
+}
+
+#link1 {
+    height: 30px;
+    width: 100px;
+    background-color: lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+   padding-left: 10px; 
+    padding-top: 5px; 
+}
+
+#link2 {
+    height: 30px;
+    width: 200px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+    padding-left: 10px; 
+    padding-top: 5px;  
+}
+#link3 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+
+#link4 {
+    height: 30px;
+    width: 100px;
+    background-color:lightblue;
+    float: left;
+    margin: 20px auto auto 20px;
+  padding-left: 10px; 
+    padding-top: 5px; 
+   }
+    .box {
+        display: block;
+    }
+}

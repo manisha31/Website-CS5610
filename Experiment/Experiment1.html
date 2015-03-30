@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Experiment 1 </title>
+   </head>
+    <script  type="text/javascript">
+        function colorChange() {
+           
+            var myLabel = document.getElementById("label1");
+            
+            myLabel.style.color = 'red';
+        }
+        function colorChange1() {
+
+            var myLabel = document.getElementById("label1");
+
+            myLabel.style.color = 'black';
+        }
+</script>
+<body>
+
+    <h2> Responsive Text </h2>
+    <h3>Description:</h3>
+    <p>
+        This is an experiment which uses html and javascript to implement the mouse-over and mouse-out methods on a text. When you mouse over
+        a text piece, it changes its color. Similarly when you mouse out on the text piece, it changes to its original color.
+        This can be used to highlight a piece of text when you put your mouse cursor on it.
+    </p>
+    <form id="form1">
+    <div>
+        <h1>
+            <label id="label1" onmouseover="colorChange()"  onmouseout="colorChange1()"> Mouse over me to see what happens!!! </label>
+             
+        </h1>
+      </div>
+        <div id="sourceDiv">
+            <h3> Source: </h3>
+            <p>
+                <a href="../fileview/Default.aspx?~/Experiment/Experiment1.html" target="_blank">HTML Source</a>
+
+            </p>
+
+            <h3> Reference: </h3>
+            <p>
+                <a href="http://www.w3schools.com/js/DEFAULT.asp" target="_blank">w3Schools Javascript Tutorial</a>
+
+            </p>
+
+        </div>
+    </form>
+</body>
+</html>

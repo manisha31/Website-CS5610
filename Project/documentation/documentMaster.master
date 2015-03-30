@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" %>
+
+<!DOCTYPE html>
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Documentation Master</title>
+    <link rel="shortcut icon" href="../../note.ico" />
+    <link href="../../css/documentationCSS.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <header> 
+             <a href="../musicHome.aspx" target="_blank" id="logo"></a>
+            <h2 id="doc"> MyBeats Documentation</h2>
+
+        </header>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+       
+    </div>
+    </form>
+</body>
+</html>

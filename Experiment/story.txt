@@ -1,0 +1,12 @@
+../story/whatisnext.htm?../Experiment/					What is Next?		
+Experiment1.html							Responsive Text
+Experiment2.html							Size changing image	
+Experiment3.html							Layout for homepage using CSS	
+Experiment4.html							Exploring jQuery
+Experiment5/Experiment5.html						Tabbed Content with CSS and jQuery
+Experiment6.aspx							Basic SQL Operations
+Experiment7.aspx							JSON Web Services
+Experiment8.html							Getting started with Bootstrap
+Experiment9.aspx							Reading XML response in C#
+Experiment10.aspx							iTunes Store RSS Parser
+story.txt								Story File
